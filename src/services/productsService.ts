@@ -62,7 +62,7 @@ export async function fetchProducts(
     const query: Record<string, any> = { status };
 
     if (categoryId) {
-        query.category_id = categoryId; // 👈 THÊM PARAM FILTER
+        query.category_id = categoryId; 
     }
 
     const res = await apiFetch<ProductsResponse>(PRODUCTS_PATH, {

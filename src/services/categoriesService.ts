@@ -4,7 +4,6 @@ import type { Category, CategoriesResponse } from '../types/category';
 const CATEGORIES_PATH = '/api/v1/categories';
 
 export async function fetchCategories(token?: string): Promise<Category[]> {
-    // tuỳ bạn đang lưu token ở đâu, tạm lấy từ localStorage
     const authToken =
         token || localStorage.getItem('accessToken') || '';
 

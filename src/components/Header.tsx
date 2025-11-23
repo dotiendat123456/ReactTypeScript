@@ -22,8 +22,9 @@ export const Header: React.FC = () => {
 
                 <nav className="nav">
                     <Link to="/" className="nav-link">Trang chủ</Link>
-                    <a href="#menu" className="nav-link">Thực đơn</a>
-                    <a href="#about" className="nav-link">Giới thiệu</a>
+                    <a href="/users/profile" className="nav-link">Thông tin người dùng</a>
+                    <a href="/myprofile" className="nav-link">Thông tin cá nhân</a>
+                    <a href="/list-users" className="nav-link">Danh sách người dùng</a>
                 </nav>
 
                 <div className="actions" style={{ display: 'flex', gap: 8, alignItems: 'center' }}>

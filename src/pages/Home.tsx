@@ -87,7 +87,7 @@ import type { Category } from '../types/category';
 import { productsService } from '../services/productsService';
 import { categoriesService } from '../services/categoriesService';
 import { useCart } from '../hooks/useCart';
-// import './Home.css';
+import './Home.css';
 
 const Home: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);

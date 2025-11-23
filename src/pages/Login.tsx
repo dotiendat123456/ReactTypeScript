@@ -8,8 +8,8 @@ const Login: React.FC = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const [email, setEmail] = useState('superadmin@booking.com');
-    const [password, setPassword] = useState('SuperAdmin@booking99');
+    const [email, setEmail] = useState('superadmin@khgc.vn');
+    const [password, setPassword] = useState('SuperAdmin@KHGC99');
     const [error, setError] = useState<string | null>(null);
 
     const from = (location.state as any)?.from?.pathname || '/';
