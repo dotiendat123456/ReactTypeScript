@@ -1,0 +1,41 @@
+.create-post-page {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.create-post-form {
+    max-width: 640px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.create-post-form .form-group {
+    margin-bottom: 12px;
+}
+
+.create-post-form label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.create-post-form textarea,
+.create-post-form input[type='number'],
+.create-post-form input[type='text'] {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+.created-preview {
+    margin-top: 24px;
+    max-width: 640px;
+}
+
+.post-preview-content p {
+    margin: 0.25rem 0;
+}

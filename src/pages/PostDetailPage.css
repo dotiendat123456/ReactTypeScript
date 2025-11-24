@@ -1,0 +1,229 @@
+/* Trang chi tiết bài đăng */
+.post-detail-page {
+  max-width: 960px;
+  margin: 24px auto 48px;
+}
+
+/* Card chính */
+.post-detail-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  margin-bottom: 24px;
+}
+
+/* Header */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.post-user-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.post-user-email {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Badge status */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* tuỳ backend của bạn đã có sẵn màu hay chưa, tạm làm nhẹ nhẹ */
+.badge-success {
+  background: #ecfdf3;
+  color: #16a34a;
+}
+
+.badge-warning {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+
+.badge-danger,
+.badge-error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Ảnh bài đăng */
+.post-image-wrapper {
+  margin: 12px 0 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.post-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Nội dung bài viết */
+.post-content {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #111827;
+}
+
+.post-content.large {
+  font-size: 16px;
+}
+
+.post-content p {
+  margin-bottom: 8px;
+}
+
+.post-content strong {
+  font-weight: 600;
+}
+
+/* Footer */
+.post-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.post-pinned {
+  margin-left: auto;
+  font-size: 13px;
+  color: #f97316;
+}
+
+/* Section info user & survey */
+.user-info-section,
+.survey-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  margin-bottom: 24px;
+}
+
+.user-info-section h2,
+.survey-section h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.user-subsection {
+  margin-top: 12px;
+}
+
+.user-subsection h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.user-subsection ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.user-subsection li {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+/* Survey block */
+.survey-section h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.survey-questions {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.survey-question {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.survey-question p {
+  margin-bottom: 4px;
+}
+
+.survey-question ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.survey-question li {
+  font-size: 14px;
+}
+
+/* Head section */
+.post-detail-page .section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.post-detail-page .section-head h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Responsive nhẹ */
+@media (max-width: 640px) {
+  .post-detail-card,
+  .user-info-section,
+  .survey-section {
+    padding: 16px 14px;
+  }
+
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-detail-page .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
